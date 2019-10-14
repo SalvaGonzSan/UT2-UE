@@ -1,29 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ejercicio 1 UT2 - Sesión 10</title>
     <link rel="stylesheet" type="text/css" href="css/HojaEstilos1.css">
-    <style>/*Hoja de estilos interna*/
-        .clasecolor{
-            color:blueviolet;
+    <style>
+        /*Hoja de estilos interna*/
+        .clasecolor {
+            color: blueviolet;
+        }
+
+        p {
+            /*Selector de elemento*/
+            text-align: center;
+            color: cyan;
+        }
+
+        #particularcolor1 {
+            /*Selector de id. Estilo particular*/
+            color: darkgoldenrod;
+        }
+
+        .clasealineacion1 {
+            /*Selector de clase*/
+            text-align: right;
+        }
+        .variasclases1{/*Clase para aplicar varias clases*/
+            color:darkgreen;
+        }
+        .variasclases2{/*Clase para aplicar varias clases*/
+            text-align: center;
+        }
+        h1, h2, p {/*Agrupación de selectores*/
+            color:darkolivegreen;
+        }
+        #colorfondo1{
+            background-color: rgb(8, 21, 97);
+            color:whitesmoke;
+        }
+        .imagenfondo1{
+            background-image: url("./img/wg.jpg");
+        }
+        .capaimagenfondo2{
+            background-image: url("./img/fondopwg.jpg");
+            width:80%;
+            height:600px;
+            margin: auto;
+            background-repeat: no-repeat;
+            /*background-repeat: repeat-x;
+            background-repeat: repeat-y;
+            background-repeat: repeat;*/
+            background-position: center bottom;
+
+
         }
     </style>
-    
+
 </head>
+
 <body>
     <h1>Sesión 10 - UT2</h1>
     <h2>Trabajo con hojas de estilo internas</h2>
-    <p class="clasecolor">Este párrafo utiliza la clase "clasecolor" que está implementada en una hoja de estilos interna</p>
+    <p class="clasecolor">Este párrafo utiliza la clase "clasecolor" que está implementada en una hoja de estilos
+        interna</p>
     <h2>Trabajo con hojas de estilo externas</h2>
-    <p>El span que está dentro de este párrafo, utilizará una <span class="colorhojaexterna">clase implementada en una hojas de estilos externa.</span></p>
+    <p>El span que está dentro de este párrafo, utilizará una <span class="colorhojaexterna">clase implementada en una
+            hojas de estilos externa.</span></p>
     <h2>Trabajo con estilos aplicados en línea</h2>
     <p>Este párrafo tendrá dentro un <span style="color:crimson;">span que utilizará un estilo en línea.</span></p>
-    <h2>Vamos a probar las prioridades a la hora de aplicar estilos: en línea (de forma directa), de forma interna o de forma externa</h2>
-    <p style="color:red;" class="clasecolor">Este párrafo va a tener propiedades que se sobrescriben. Aquí demostramos que el estilo en línea tiene prioridad sobre el estilo en hoja interna.</p>
-    <p class="colorhojaexterna clasecolor">Pruebo el orden de prioridades entre una hoja de estilos interna y una hoja de estilos externa. En este caso, la hoja de estilos externa está declarada después en el código que la hoja de estilos interna. Hay que recordar que el código se interpreta en cascada, es decir, línea a línea.</p>
-    
+    <h2>Vamos a probar las prioridades a la hora de aplicar estilos: en línea (de forma directa), de forma interna o de
+        forma externa</h2>
+    <p style="color:red;" class="clasecolor">Este párrafo va a tener propiedades que se sobrescriben. Aquí demostramos
+        que el estilo en línea tiene prioridad sobre el estilo en hoja interna.</p>
+    <p class="colorhojaexterna clasecolor">Pruebo el orden de prioridades entre una hoja de estilos interna y una hoja
+        de estilos externa. En este caso, la hoja de estilos externa está declarada después en el código que la hoja de
+        estilos interna. Hay que recordar que el código se interpreta en cascada, es decir, línea a línea.</p>
+    <h2>Selectores</h2>
+    <p>Los elementos que tengan una clase específica van a tener las propiedades de esa clase específica con prioridad
+        sobre los selectores de elemento</p>
+    <p id="particularcolor1">Este párrafo va a cumplir un estilo particular (selector de id). Tiene prioridad sobre el
+        selector de elemento si hay propiedades que se sobrescriban.</p>
+    <p class="clasealineacion1">Este párrafo cumple una clase "clasealineacion1". Si cumpliera un selector de nombre,
+        las propiedades comunes con la clase "clasealineacion1" tendrían prioridad en el selector de clase.</p>
+    <h2>Aplicar varias clases a un elemento</h2>
+    <div class="variasclases1 variasclases2">
+        Capa que cumple varias clases
+    </div>
+    <h2>Colores de fuente y colores de fondo</h2>
+    <div id="colorfondo1">
+            Esta capa tendrá texto de color blanco y fondo azul oscuro
+    </div>
+    <h3 style="color:#6a5acd;">H3 con color establecido mediante código hexadecimal</h3>
+    <h2>Imágenes de fondo</h2>
+    <div class="imagenfondo1">
+        Capa con imagen de fondo. Como la capa no tiene dimensiones, sólo se va a ver una porción de la imagen, concretamente la adaptada al tamaño del texto que tiene la capa.
+        Si no hubiera escrito texto, esta imagen no se vería.
+    </div>
+    <h2>Trabajo con imágenes de fondo en capas con una dimensión determinada</h2>
+    <div class="capaimagenfondo2">
+
+
+    </div>
 </body>
+
 </html>
