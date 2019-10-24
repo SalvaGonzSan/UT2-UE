@@ -1,0 +1,126 @@
+.dimensionescapa{
+    width:70%;
+    height:400px;
+    margin:auto;
+    border:solid 1px black;
+    
+}
+.padding1{
+    padding-top:30px;
+    padding-left:40px;
+    padding-bottom: 50px;
+    padding-right:20px;
+}
+.paddinggeneral{
+    padding:50px;
+    margin-top:30px;
+}
+.capaalturaminima{
+    width:60%;
+    min-height:500px;/*Altura mínima. Si el contenedor necesita crecer porque el contenido lo desborda, lo hará hasta que necesite*/
+    border: solid 1px black;
+    margin:auto;
+    margin-top:50px;
+}
+
+.capaalturaminimamaxima{
+    width:60%;
+    min-height:500px;/*Altura mínima. Si el contenedor necesita crecer porque el contenido lo desborda, lo hará hasta que necesite*/
+    border: solid 1px black;
+    margin:auto;
+    margin-top:50px;
+    max-height: 1000px;
+    overflow:auto;
+}
+.capaconmarginleft{
+    width:90%;
+    margin-left:15%;
+    min-height: 400px;
+    border:solid black 1px;
+}
+.capaizquierdaoutline{
+    float:left;
+    outline: solid 4px black;
+    min-height: 400px;
+    width:50%;
+    margin-bottom: 60px;
+}
+.capaderechaoutline{
+    float:left;
+    outline: solid 4px rgb(156, 15, 15);
+    min-height: 400px;
+    width:50%;
+    margin-bottom: 60px;
+}
+.outlineconoffset{
+    width:50%;
+    margin:auto;
+    min-height:300px;
+    outline:dashed 2px aquamarine;
+    border:solid 2px rebeccapurple;
+    outline-offset: 10px;
+}
+.clearfix{
+    display: flow-root;
+}
+.alineacionderecha{
+    text-align: right;
+}
+.alineacionizquierda{
+    text-align: left;
+}
+.alineacioncentrada{
+    text-align: center;
+}
+.alineacionjustificada{
+    text-align: justify;
+}
+.tachado{
+    text-decoration: line-through;
+}
+.subrayado{
+    text-decoration: underline;
+}
+.sobrerrayado{
+    text-decoration: overline;
+}
+.transformacionmin{
+    text-transform: lowercase;
+}
+.transformacionmay{
+    text-transform: uppercase;
+}
+.transformacioncap{
+    text-transform: capitalize;
+}
+.identacion{
+    text-indent: 40px;
+}
+.espaciadoentreletras{
+    letter-spacing: 4px;
+}
+.alturadelinea{
+    line-height: 1.6;
+}
+.direcciondeltexto{
+    direction: rtl;
+}
+
+.espaciadoentrepalabras{
+    word-spacing: 15px;
+}
+
+h4{
+    text-shadow:10px 14px blue;/*Primera cifra a nivel horizontal. Segunda cifra a nivel vertical*/
+}
+
+@font-face{
+    font-family: familiafuente1;
+    src: url(../fonts/Modak-Regular.ttf);
+}
+
+.pruebafuentepersonalizada{
+    font-family: familiafuente1;
+}
+
+
