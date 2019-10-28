@@ -1,0 +1,29 @@
+/*Mediante pseudoclases soy capaz de controlar los estados de los enlaces*/
+a:link{
+    color:green;
+    text-decoration: none;/*Para que los enlaces no aparezca subrayados*/
+}
+a:visited{
+    color:purple;
+}
+a:active{
+    color:aquamarine;
+    background-color: palegoldenrod;/*Cuando active el enlace, es decir, cuando haga clic sobre él*/
+}
+a:hover{
+    color:orange;
+    text-decoration:underline;/*Si quiero que los enlaces esté subrayados cuando sitúo el ratón encima*/
+}
+ol{
+    background-color:#ff9999;
+    padding:20px;
+}
+ol li{/*Selector descendente - Elementos li contenidos en un elemento ol*/
+    background-color: #ffe5e5;
+    padding:5px;
+    margin-left:35px;
+}
+ul{
+    list-style-image: url('../recursos/favicon.jpg');
+}
+
