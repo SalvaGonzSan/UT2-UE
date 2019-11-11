@@ -1,0 +1,38 @@
+.capaestandar{
+    width: 20%;
+    min-height: 100px;
+    border:1px solid black;
+}
+
+.positionfixed{
+    position:fixed;
+    left:70%;;
+    top:200px;   
+}
+
+.positionsticky{
+    position:sticky;
+    position: -webkit-sticky;/*Compatibilidad con Safari*/
+    top:0;
+    left:5%;
+    border:solid red 1px;
+}
+.capa200perwidth{
+    width: 200%;
+    min-height: 200px;
+    border:solid 1px black;
+}
+.positionabsolute1{
+    position:absolute;
+    top:200px;
+    left:10%;
+    border:solid 1px green;
+    font-weight: bolder;
+}
+.positionabsolute2{
+    position:absolute;
+    top:250px;
+    left:15%;
+    border:solid 1px blue;
+    font-weight: bolder;
+}
